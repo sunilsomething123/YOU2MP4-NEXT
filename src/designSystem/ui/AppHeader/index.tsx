@@ -1,5 +1,5 @@
 import { Logo } from '@/designSystem/layouts/NavigationLayout/components/Logo'
-import { Flex, Typography } from 'antd'
+import { Typography } from 'antd'
 import React from 'react'
 
 const { Text, Title } = Typography
@@ -14,17 +14,20 @@ export const AppHeader: React.FC<Props> = ({
   description,
 }) => {
   return (
-    <>
-      <Flex justify="center">
+    <div className="flex flex-col items-center py-4 bg-black text-white">
+      <div className="flex justify-center mb-4">
         <Logo height="100" />
-      </Flex>
-
-      <Flex vertical align="center">
-        <Title level={3} style={{ margin: 0 }}>
+      </div>
+      <div className="text-center">
+        <Title level={1} className="text-4xl font-bold m-0">
           {title}
         </Title>
-        {description && <Text type="secondary">{description}</Text>}
-      </Flex>
-    </>
+        {description && (
+          <Text className="text-base font-normal text-gray-400">
+            {description}
+          </Text>
+        )}
+      </div>
+    </div>
   )
 }

@@ -9,30 +9,30 @@ export const Theme = {
   algorithm: theme.darkAlgorithm,
   token: {
     // Colors
-    colorPrimary: '#00a1ec',
+    colorPrimary: '#1DB954', // Spotify's primary green color
     colorError: '#ff4d4f',
-    colorInfo: '#1677ff',
-    colorSuccess: '#52c41a',
+    colorInfo: '#1DB954',
+    colorSuccess: '#1DB954',
     colorWarning: '#faad14',
-    colorTextBase: 'white',
-    colorLink: '#00a1ec',
-    colorBgBase: 'black',
-    colorBgContainer: 'black',
-    colorBorder: '#3f3f45',
-    colorBorderSecondary: '#27272a',
-    colorSplit: 'rgba(255, 255, 255, 0.07)',
+    colorTextBase: '#FFFFFF',
+    colorLink: '#1DB954',
+    colorBgBase: '#191414', // Spotify's dark background color
+    colorBgContainer: '#191414',
+    colorBorder: '#282828',
+    colorBorderSecondary: '#404040',
+    colorSplit: 'rgba(255, 255, 255, 0.1)',
 
     // Typography
     fontFamily: `${interFont.style.fontFamily}, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial`,
     fontSize: 14,
-    fontSizeHeading1: 38,
-    fontSizeHeading2: 30,
+    fontSizeHeading1: 48, // Adjusted for Spotify-like large headings
+    fontSizeHeading2: 32,
     fontSizeHeading3: 24,
-    linkDecoration: 'underline',
+    linkDecoration: 'none',
 
-    //Form
-    controlItemBgActive: '#27272a',
-    controlOutline: 'rgba(255, 255, 255, 0.15)',
+    // Form
+    controlItemBgActive: '#282828',
+    controlOutline: 'rgba(255, 255, 255, 0.2)',
     controlHeight: 36,
     controlHeightSM: 32,
 
@@ -51,25 +51,25 @@ export const Theme = {
       itemMarginBottom: '22px',
     },
     Layout: {
-      headerBg: 'black',
-      footerBg: 'black',
-      bodyBg: 'black',
-      siderBg: '#141414',
+      headerBg: '#191414',
+      footerBg: '#191414',
+      bodyBg: '#191414',
+      siderBg: '#121212',
     },
     Menu: {
       activeBarBorderWidth: 0,
       itemHeight: 30,
-      //topbar menu items
-      horizontalItemSelectedColor: 'white',
+      // topbar menu items
+      horizontalItemSelectedColor: '#FFFFFF',
       horizontalItemSelectedBg: 'transparent',
-      //leftbar menu items
-      itemSelectedColor: 'white',
+      // leftbar menu items
+      itemSelectedColor: '#FFFFFF',
       itemSelectedBg: 'transparent',
       itemActiveBg: 'transparent',
-      //topbar and leftbar menu items
-      itemHoverColor: 'white',
+      // topbar and leftbar menu items
+      itemHoverColor: '#FFFFFF',
       itemHoverBg: 'transparent',
-      itemColor: '#909090',
+      itemColor: '#B3B3B3',
       itemBg: 'transparent',
       iconMarginInlineEnd: 8,
       iconSize: 16,
@@ -77,7 +77,7 @@ export const Theme = {
     Button: {
       paddingInlineSM: 11,
       colorTextLightSolid: 'black',
-      primaryColor: 'black',
+      primaryColor: '#1DB954',
       fontWeight: 500,
     },
   },
